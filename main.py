@@ -1,7 +1,6 @@
 from gpiozero import LED
+led = LED(21)
 
-
-LED(21).on()
 
 while True:
-    pass
+    led.on()
