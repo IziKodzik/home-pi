@@ -1,7 +1,12 @@
-from signal import pause
+from gpiozero import Servo
+from time import sleep
 
-from gpiozero import LED
-led = LED(21)
-led.blink()
+servo = Servo(17)
 
-pause()
+while True:
+    servo.min()
+    sleep(1)
+    servo.mid()
+    sleep(1)
+    servo.max()
+    sleep(1)
