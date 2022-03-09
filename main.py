@@ -1,7 +1,7 @@
 from gpiozero import LED
 
 
-LED(4).on()
+LED(40).on()
 
 while True:
     pass
